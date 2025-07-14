@@ -67,5 +67,46 @@ python app/app.py
 - Built with [HuggingFace Transformers](https://huggingface.co/transformers/), [PyTorch](https://pytorch.org/), and [Gradio](https://gradio.app/).
 - Motivational quotes dataset: [Kaggle - Quotes Dataset](https://www.kaggle.com/datasets/akmittal/quotes-dataset)
 
+- ## Google Colab Usage
+
+This repository includes a Jupyter notebook (`motivation_AI.ipynb`) designed for Google Colab. To use:
+1. Open [motivation_AI.ipynb](./motivation_AI.ipynb) in Google Colab.
+2. Upload your dataset (`quotes.json` or `quotes_plain.txt`) using the provided upload cell (see notebook instructions).
+3. Run each cell sequentially to fine-tune the GPT-2 model and generate motivational quotes.
+4. Launch the Gradio web interface from the notebook to interact with the model online.
+
+## Example Output
+
+> "Success is not final, failure is not fatal: it is the courage to continue that counts."  
+> — AI-Generated
+
+## Dataset Format
+
+- **quotes.json**: List of objects, each with `quote`, `author`, and optionally `tags`.
+- **quotes_plain.txt**: One motivational quote per line.
+
+## Training Parameters
+
+- Epochs: 3
+- Batch size: 2
+- Block size: 64
+- Learning rate: 5e-5
+
+## Known Issues
+
+- **GPU Requirement:** Model training requires a GPU; use Google Colab for free cloud GPUs.
+- **Model Size:** Fine-tuned models may be too large to download or run locally; work directly in Colab when needed.
+- **Transformers Dataset Warning:** You may see a warning about dataset deprecation; follow HuggingFace guidance for future upgrades.
+
+## Quick Links
+
+- [Kaggle - Quotes Dataset](https://www.kaggle.com/datasets/akmittal/quotes-dataset)
+- [HuggingFace Transformers](https://huggingface.co/transformers/)
+- [PyTorch](https://pytorch.org/)
+- [Gradio](https://gradio.app/)
+
+---
+
+
 ---
 Feel free to customize and expand this project! 
