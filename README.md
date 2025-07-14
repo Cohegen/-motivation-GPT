@@ -8,6 +8,7 @@ Generate unique, deep-sounding motivational quotes using a fine-tuned GPT-2 mode
 - Web app interface powered by Gradio
 
 ## Project Structure
+-If you download the scripts in this repo, below is an authentic structure of how you should arrange these scripts in folder so that your work is easy in your IDE.
 ```
 motivationAI/
 │
@@ -78,7 +79,8 @@ This repository includes a Jupyter notebook (`motivation_AI.ipynb`) designed for
 ## Example Output
 
 > "Success is not final, failure is not fatal: it is the courage to continue that counts."  
-> — AI-Generated
+> — AI-Generated-->Success is not final, failure is not fatal: it is the courage to continue that counts. And sometimes courage is not enough, it's the courage to be out of control and without direction.",
+    "Author": "Albert Einstein",
 
 ## Dataset Format
 
